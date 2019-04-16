@@ -14,3 +14,6 @@ mark: 형광펜 ins: 삽입됨 del:삭제됨 bdo: 텍스트 방향지정
 
 # 2019 04 15
 주석처리, color에 대한 다양한 방법 :rgba hsl, hsla등 
+
+# 2019 04 16
+css 추가

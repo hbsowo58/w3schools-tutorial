@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        body {
+            background-color: powderblue; /*바디태그 파우더 블루색상*/
+        }
+
+        h1 {
+            color: blue;                /*h1태그  블루색상*/
+        }
+        p {
+            color: red;                     /*p태그  레드색상*/
+            border: 1px solid powderblue;   /*p태그  보더 1px 실선 파우더블루*/
+            margin: 50px;                     /*바깥쪽여백 50px*/   
+            padding: 30px;                     /*안쪽여백 30px*/
+        }
+
+        #p01 {
+            color: blue;                    /*아이디 p01 파란색*/
+        }
+
+        p.error {
+            color: red;                     /*클래스 에러 빨간색*/
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="styles.css"> css 외부에서-->      
+    <!-- <link rel="stylesheet" href="/html/styles.css"> css 경로로-->
+    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+</head>
+
+<body>
+    <h1 style="color:blue;">This is a Blue Heading</h1> <!--css의 가장 쉬운 태그안에 삽입-->
+    <h1>This is a heading</h1>                            <!--h1 만들고, 위에 스타일태그로 묶어서 한번에주거나-->
+    <p>This is a paragraph.</p>                           <!-- 아예 css파일을 만든후 링크로 헤더에 삽입-->
+    <p id="p01">I am different</p>                        <!--아이디 셀렉터 사용-->
+    <p class="error">I am different</p>                   <!--클래스 셀렉터 사용-->
+
+</body>
+
+</html>
