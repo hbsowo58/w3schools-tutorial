@@ -16,4 +16,4 @@ mark: 형광펜 ins: 삽입됨 del:삭제됨 bdo: 텍스트 방향지정
 주석처리, color에 대한 다양한 방법 :rgba hsl, hsla등 
 
 # 2019 04 16
-css 추가
+css,links a태그에 타겟 속성 기본값 self, 많이쓰이는 blank(새창) top(브라우저 탭 최상단)등 추가
