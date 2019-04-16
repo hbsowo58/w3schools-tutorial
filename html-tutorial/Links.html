@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;   /*기본색상 녹색, 뒷배경 상속 글자 꾸미기 없음*/
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;  /*방문했을시 분홍색, 뒷배경 상속 글자 꾸미기 없음*/
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;  /*호버시 빨간색, 뒷배경 상속 글자 꾸미기 없음*/
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;  /*활용시 노란색, 뒷배경 상속 글자 꾸미기 없음*/
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>  
+
+    <a href="html_images.asp" target="_blank">HTML Images</a>
+    
+    <a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a>
+
+    <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+    </a>
+
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+    <!-- 다양하게 링크걸어보면서 taget속성에 대해서 알면 좋을 것 같다.
+    _self : 연결 문서를 클릭한 창에서 연다.(기본값)
+
+    _blank : 연결 문서를 새 창에서 연다.
+
+    _top : 가장 상위 창에서 연다.(즉 프레임을 무시하며, 전체 브라우저 창에서 작동, 부모가 없으면 _self처럼 작동)
+
+    frame name : 지정된 프레임 안에 연다.
+    -->
+
+</body>
+
+</html>
