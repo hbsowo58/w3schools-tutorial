@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>  <!-- 자바스크립트란?-->
+
+<p id="demo">JavaScript can change HTML content.</p> <!--p태그에 아이디선택자주고-->
+<p id="demo2">JavaScript can hide HTML elements.</p>
+<p id="demo3" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button><br>
+ <!--버튼태그에 클릭라는 타입 버튼생성후, 클릭시 문서내의 demo 아이디 선택자에서 html문서에 헬로우 자바스크립트로 넣기 -->
+
+ <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button><br>
+ <!-- 두번째버튼, 폰트사이즈 변경-->
+
+ <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button><br>
+ <!-- 세번째버튼, 화면에 안보이게, 디스플레이넌은 공간조차 차지 못하도록-->
+
+ <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+ <!--네번째버튼, 블록타입으로 만들어서, 디스플레이 넌 없애기-->
+
+</body>
+</html>
