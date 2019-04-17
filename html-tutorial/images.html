@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>HTML Image</h2>
+    <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+    <!--이미지 태그를 사용하려면, 이미지태그 사용후 src속성, alt=이미지가 안나올시 대체텍스트-->
+    <!-- <img src="url"> src속성에 url 삽입 -->
+    <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+    <!--이미지 속성으로 너비와 높이를 줄 수 있다.-->
+
+
+    <p>The image below has the width attribute set to 128 pixels, but the stylesheet overrides it, and sets the width to
+        100%.</p>
+    <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+    <!--해당 이미지를 128로 주지만 css가 덮어버린다-->
+
+    <p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:
+    </p>
+    <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"> <!-- 속성을 확실히주면 128px로 만들 수 있다-->
+
+    <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+    <!--이미지가 다른 폴더에 있는 경우 해당 경로-->
+
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"> <!-- 이미지가 서버쪽에 있을 경우-->
+
+    <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+    <!--이미지 속성은 gif파일도 허용한다-->
+
+    <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+        <!--링크에 이미지를 삽입한 코드-->
+    </a>
+
+    <p>
+        <img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        <!--이미지를 css 플로트로 우측으로 -->
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+
+    <p><strong>Float the image to the left:</strong></p>
+    <p>
+        <img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"> <!-- 이미지를 float로 좌측으로-->
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <!--맵이라는 태그안에 에어리어 잡고 여러개넣기-->
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+    <body style="background-image:url('clouds.jpg');"></body>
+    <!--이미지를 백그라운드로 삽입가능-->
+
+    <p style="background-image:url('clouds.jpg');">
+        <!--백그라운드 이미지가 패러그래프에 들어갔을 상황-->
+        ...
+    </p>
+
+    <picture>
+            <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">   <!--픽처 태그를 사용해서 이미지를 유연하고 특별하게 만들 수 있다-->
+            <source media="(min-width: 465px)" srcset="img_white_flower.jpg">   
+            <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+          </picture>
+
+</body>
+
+</html>
