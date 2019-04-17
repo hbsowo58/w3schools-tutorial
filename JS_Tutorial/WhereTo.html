@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Where To</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo1").innerHTML = "Paragraph changed."; //헤더에 삽입한경우 데모1의 아이디 선택자에 문서를 읽어와 패러그랩체인지 라는 문자열을 삽입하는 함수
+        }
+    </script>
+</head>
+
+
+
+
+
+<body>
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "My First JavaScript";  //바디에 삽입한경우 데모의 아이디 선택자에 문서를 읽어와 문자열을 삽입
+    </script>
+
+    <h2>JavaScript in Head</h2>
+
+    <p id="demo1">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+    <!--버튼이 클릭됬을때 myfunction 호출-->
+
+
+    <script src="myScript.js"></script>
+    <!--외부에 자바스크립트 파일을 만들고, 그자바스크립트 파일을 불러오는방식(html 코드가 방대해지는것 방지 및 코드 작성 분류)-->
+    <script src="myScript2.js"></script><!-- 이런식으로 여러개로 나눌 수 있음-->
+</body>
+
+</html>
