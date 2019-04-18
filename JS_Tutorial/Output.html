@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+</head>
+
+<body>
+    <!-- Writing into an HTML element, using innerHTML. html요소안에 innerHTML 사용
+        Writing into the HTML output using document.write().    문서에 write()함수 사용
+        Writing into an alert box, using window.alert().        경고창 박스띄우기
+        Writing into the browser console, using console.log(). 콘솔창 사용-->
+
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <p id="demo"></p>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button> <!--버튼이 클릭되면 문서에 작성 새창-->
+
+    <script>
+        document.getElementById("demo").innerHTML = 5 + 6; //아이디 선택자 demo읽어와서 연산해서 html문서에 작성
+        document.write(5 + 6); //바로 작성
+        window.alert(5 + 6); //경고창에 연산결과 띄우기
+        console.log(5 + 6); //콘솔창에 연산결과 띄우기
+    </script>
+
+</body>
+</html>
