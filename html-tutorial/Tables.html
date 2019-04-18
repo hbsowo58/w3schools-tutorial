@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            /*테이블태그, 테이블 제목태그 테이블 내용 모두 경계선 1px 실선, 검은색*/
+            border-collapse: collapse;
+            /*표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.*/
+            padding: 15px;
+            /*안쪽여백 15px*/
+            text-align: left;
+            /*좌정렬*/
+            border-spacing: 5px;
+            /*테이블 cell과 테두리와의 간격을 5px 지정*/
+        }
+
+        table#t01 {
+            width: 100%;
+            background-color: #f1f1c1;
+            /*테이블아이디 t01 크기 100%, 배경색상 지정*/
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+            /*테이블아이디 t01의 자식요소들, 배경색상*/
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+            /*테이블아이디 t01의 자식요소들, 배경색상*/
+        }
+
+        table#t01 th {
+            color: white;
+            /*테이블아이디 t01의 제목요소, 배경색상,글자색상*/
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width:100%">
+        <!--첫번째 테이블 크기 100%-->
+        <tr>
+            <th>Firstname</th>
+            <!--3행3열-->
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+
+    <table style="width:100%">
+        <!--두번쨰 테이블 2행3열 테이블 -->
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th> <!-- 열 1개확장 그래서 뒤에 열필요 x -->
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>55577854</td>
+            <td>55577855</td>
+        </tr>
+    </table>
+
+    <table style="width:100%">
+        <!--세번쨰 테이블 3행2열 테이블 -->
+        <tr>
+            <th>Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <!--행확장-->
+            <td>55577854</td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+            <!--위에서 행확장해서, 필요x-->
+        </tr>
+    </table>
+
+    <table style="width:100%">
+        <!--네번째 테이블 캡션태그 삽입 3행2열 확장x-->
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <table id="t01">
+        <!--다섯번째 테이블 아이디 선택자 t01 2행 3열테이블-->
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <!--
+    Use the HTML <table> element to define a table  html은 테이블요소로 테이블을 정의해 사용한다
+Use the HTML <tr> element to define a table row     행을 tr요소로 사용한다
+Use the HTML <td> element to define a table data    data는 td요소
+Use the HTML <th> element to define a table heading 테이블제목은 th요소
+Use the HTML <caption> element to define a table caption    캡션태그를 사용하여 캡션 사용가능
+Use the CSS border property to define a border              보더속성은 보더
+Use the CSS border-collapse property to collapse cell borders   셀굵기 border-collapse
+Use the CSS padding property to add padding to cells            padding속성으로 안쪽여백
+Use the CSS text-align property to align cell text              text-align 속성으로 셀정렬
+Use the CSS border-spacing property to set the spacing between cells  셀간격 border-spzcing  
+Use the colspan attribute to make a cell span many columns          clospan으로 많은 열확장가능
+Use the rowspan attribute to make a cell span many rows             rowspan으로 많은 행확장가능
+Use the id attribute to uniquely define one table                   id선택자를 사용해 유니크하게 한개의 테이블 사용가능
+    -->
+
+</body>
+
+</html>
