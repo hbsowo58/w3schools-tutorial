@@ -27,4 +27,4 @@ JS 시작, 인트로덕션 추가 자바스크립트가 HTML에서 무슨역할�
 # 2019 04 18
 - html 폴더 table 추가
 
-+ 캡션 caption태그, 열확장 행확장 기능 존재 html의 핵심은 table와 div이라고 
++ 캡션 caption태그, 열확장 행확장 기능 존재 html의 핵심은 table와 div이라고생각
