@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lists</title>
+    <style>
+        .ul {
+            list-style-type: none;
+            /*ul태그 스타일없애고 */
+            margin: 0;
+            /*외부여백0*/
+            padding: 0;
+            /*내부여백0*/
+            overflow: hidden;
+            /*겹치는부분없애기*/
+            background-color: #333333;
+            /*배경색상333333*/
+        }
+
+        .li {
+            float: left;
+            /*리스트요소들 좌측*/
+        }
+
+        .li a {
+            display: block;
+            /*리스트 링크 블록형태*/
+            color: white;
+            /*글자색상 흰색*/
+            text-align: center;
+            /*글자 가운데정렬*/
+            padding: 16px;
+            /*내부여백 16px*/
+            text-decoration: none;
+            /*글자 데코없애기*/
+        }
+
+        .li a:hover {
+            background-color: #111111;
+            /*리스트속성에 마우스 올리면 111111*/
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 순서없는 리스트 -->
+
+    <ul style="list-style-type:disc;">
+        <!-- 불릿 디폴트-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:circle;">
+        <!--원형-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:square;">
+        <!--사각형-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:none;">
+        <!--불릿 없음-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- 순서 있는 리스트 -->
+    <ol type="1">
+        <!--숫자형-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="A">
+        <!--대문자-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="a">
+        <!-- 소문자-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="I">
+        <!--로마 대문자-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="i">
+        <!--로마 소문자-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <dl>
+        <!--정의형 리스트 description-->
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+
+    <ul>
+        <!-- 중첩리스트-->
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+
+    <ol start="50">
+        <!--시작번호 50-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="I" start="50">
+        <!--시작번호 로마 대문자-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+
+    <ul class="ul">
+        <li class="li"><a href="#home">Home</a></li>
+        <li class="li"><a href="#news">News</a></li>
+        <li class="li"><a href="#contact">Contact</a></li>
+        <li class="li"><a href="#about">About</a></li>
+    </ul>
+
+
+    <!-- Use the HTML <ul> element to define an unordered list
+            html은 ul 태그를 통해, 순서없는 리스트를 정의하여 사용한다
+            Use the CSS list-style-type property to define the list item marker
+            css list-stype type property로 그 리스트의 마커를 바꿔쓴다
+            Use the HTML <ol> element to define an ordered list
+            순서 있는 리스트를 정의할떈 ol태그
+            Use the HTML type attribute to define the numbering type
+            html속성으로 넘버링 바꿀수 있다
+            Use the HTML <li> element to define a list item
+            li요소는 list item으로 정의되어 사용
+            Use the HTML <dl> element to define a description list
+            정의형리스트 dl태그
+            Use the HTML <dt> element to define the description term
+            dl안에 description term을 dt태그로, 
+            Use the HTML <dd> element to describe the term in a description list
+            나머지아이들을 dd태그를 사용한다
+            Lists can be nested inside lists
+            리스트는 중첩하여 사용할수 있다
+            List items can contain other HTML elements
+            리스트는 다른 html 요소에 컨테이너로 쓸수 있다?
+            Use the CSS property float:left or display:inline to display a list horizontally
+            css float랑 display 속성을 활용해서 리스트를  수평으로 나타낼 수 있다.-->
+            
+
+</body>
+
+</html>
