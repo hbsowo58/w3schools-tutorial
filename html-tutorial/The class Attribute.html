@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The class Attribute</title>
+    <!-- Using The class Attribute
+    The HTML class attribute is used to define equal styles for elements with the same class name.
+
+    So, all HTML elements with the same class attribute will have the same format and style.
+    html class 애트리뷰트는 같은 스타일로 ,같은 클래스이름의 요소들을 정의하기 위해사용되며
+    모든 요소들은 같은 애트리뷰트로 같은 포매팅과 스타일을 가진다
+     -->
+
+        <style>
+            .cities {
+                background-color: black;
+                color: white;
+                margin: 20px;
+                padding: 20px;
+            }
+
+            span.note {
+                font-size: 120%;
+                color: red;
+            }
+
+            .city {
+                background-color: tomato;
+                color: white;
+                padding: 10px;
+            }
+
+            .main {
+                text-align: center;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="cities">
+    <!--cities 클래스들 배경색,글자색,안쪽여백,바깥쪽여백 바뀌는것보기-->
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+
+    <div class="cities">
+    <!--cities 클래스들 배경색,글자색,안쪽여백,바깥쪽여백 바뀌는것보기-->    
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div class="cities">
+      <!--cities 클래스들 배경색,글자색,안쪽여백,바깥쪽여백 바뀌는것보기-->
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <!--span태그의 노트 클래스들만 스타일변경-->
+    <p>This is some <span class="note">important</span> text.</p>
+    <!--span태그의 노트 클래스들만 스타일변경-->
+    <h2 class="city">London</h2>
+    <!--city클래스 변경-->
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <!--city클래스 변경-->
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <!--city클래스 변경-->
+    <p>Tokyo is the capital of Japan.</p>
+
+    <h2 class="city main">London</h2>
+    <!--멀티 클래스 예제, city클래스로 변경에 main클래스들 누적하여 스타일변경 변경-->
+
+    <h2 class="city">Paris</h2>
+    <!--서로다른 태그도-->
+    <p class="city">Paris is the capital of France.</p>
+    <!--같은 클래스로 묶어서 같은 스타일 줄 수 있다-->
+
+    <button onclick="myFunction()">Hide elements</button>
+    <!--버튼클릭하면 함수 호출-->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+    <!--city라는 클래스네임읽어와서 x에 넣고, x갯수만큼 디스플레이 속성 넌값 -->
+
+</body>
+
+</html>

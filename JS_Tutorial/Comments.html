@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comments</title>
+</head>
+
+<body>
+    <!-- JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+
+    JavaScript comments can also be used to prevent execution, when testing alternative code.
+
+    Single Line Comments
+    Single line comments start with //.
+
+    Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+
+
+    Multi-line Comments
+    Multi-line comments start with /* and end with */.
+
+    Any text between /* and */ will be ignored by JavaScript.
+
+    자바스크립트 주석은 코드를 리더블하게 하거나 설명할 수 있다
+    주석은 또한 실행을 예방(막는다는 느낌)할 수 있다
+    한라인 주석은 //와 같이 사용
+    텍스트사이에 //을 넣으면 끝라인까지 무시된다
+    
+    여러줄 주석은 /*과 */ 사이에 넣는다
+    -->
+
+
+
+
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <script>
+        // Change heading: 한줄 주석 설명
+        document.getElementById("myH").innerHTML = "My First Page"; 
+
+        // Change paragraph: 위동
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+
+
+
+        /*
+        The code below will change
+        the heading with id = "myH"
+        and the paragraph with id = "myP"
+        in my web page:
+        여러줄 주석
+        */
+        document.getElementById("myH").innerHTML = "My First Page";
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+
+        //document.getElementById("myH").innerHTML = "My First Page"; 주석실행막기
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+
+        /* 여러줄 주석 예제
+        document.getElementById("myH").innerHTML = "My First Page";
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+        */
+
+    </script>
+
+</body>
+
+</html>
