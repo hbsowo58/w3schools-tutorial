@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+</head>
+<body>
+    
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo4"></p>
+
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+
+var pi = 3.14;
+var person = "John Doe";
+var answer = 'Yes I am!';
+//자바스크립트 기본
+
+document.getElementById("demo1").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+
+
+
+
+var carName = "Volvo";
+document.getElementById("demo2").innerHTML = carName;
+//문자열 넣기
+
+var person = "John Doe", carName = "Volvo", price = 200;
+document.getElementById("demo4").innerHTML = carName;
+//많이 사용할땐 ,로 구분
+
+var carName = "Volvo";
+var carName;
+//값을 재정의해도 손실되지 않음
+
+var x = "John" + " " + "Doe";
+//문자열 더하는 예제
+
+var x = 2 + 3 + "5";
+//이렇게더하면 앞에는 5,뒤에는문자열5가 들어갈듯
+
+
+
+</script>
+
+<!-- In programming, just like in algebra, we use variables (like price1) to hold values.
+
+In programming, just like in algebra, we use variables in expressions (total = price1 + price2).
+
+From the example above, you can calculate the total to be 11.
+
+JavaScript variables are containers for storing data values.
+다른 것과 마찬가지로 담아놓고 연산할 수 있다는 뜻같음 
+
+JavaScript Identifiers
+All JavaScript variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+The general rules for constructing names for variables (unique identifiers) are:
+
+Names can contain letters, digits, underscores, and dollar signs.
+Names must begin with a letter
+Names can also begin with $ and _ (but we will not use it in this tutorial)
+Names are case sensitive (y and Y are different variables)
+Reserved words (like JavaScript keywords) cannot be used as names
+JavaScript identifiers are case-sensitive.
+
+The Assignment Operator
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+
+This is different from algebra. The following does not make sense in algebra:
+식별자에 대한 내용, 다른언어들과 비슷함 연산가능하고 = 같다가 아니라 대입연산
+
+JavaScript Data Types
+JavaScript variables can hold numbers like 100 and text values like "John Doe".
+
+In programming, text values are called text strings.
+
+JavaScript can handle many types of data, but for now, just think of numbers and strings.
+
+Strings are written inside double or single quotes. Numbers are written without quotes.
+
+If you put a number in quotes, it will be treated as a text string.
+자바스크립트 자료형, 문자열에 대한 내용
+
+Declaring (Creating) JavaScript Variables
+Creating a variable in JavaScript is called "declaring" a variable.
+
+You declare a JavaScript variable with the var keyword:
+
+var 사용해서 선언
+
+In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+A variable declared without a value will have the value undefined.
+
+The variable carName will have the value undefined after the execution of this statement:
+
+값이 선언되지 않은 값 undefined-->
+
+
+
+
+    
+</body>
+</html>

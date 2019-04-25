@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The id Attribute</title>
+    <style>
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Using The id Attribute
+        The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).
+        
+        The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value.
+        
+        In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:
+        id 애트리뷰트는 html문서내에 고유하며 css나 JavaScript의 특정 업무를 주는 값으로 사용할 수 있고,
+        씨에스에스에서 요소들을 특정하게 선택할떄 해쉬를 써서 요소를 선택 -->
+
+
+
+    <h1 id="myHeader">My Header</h1>
+
+    <!-- Tip: The id attribute can be used on any HTML element.
+
+    Note: The id value is case-sensitive.
+
+    Note: The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.).
+    아이디 애트리뷰트는 html 어디에서든 사용할 수 있고, 대소문자를 구별하며 한글자이상 글자로 사용해야되고 공백이나 스페이스,탭등 을 사용x-->
+
+    <!-- A unique element -->
+    <h1 id="myHeader">My Cities</h1>
+
+    <!-- Multiple similar elements
+    클래스는 여러명이 사용 아이디는 단일 차이인듯 -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <p><a href="#C4">Jump to Chapter 4</a></p>
+    <!-- Bookmarks with ID and Links
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+
+Bookmarks can be useful if your webpage is very long.
+
+To make a bookmark, you must first create the bookmark, and then add a link to it.
+
+When the link is clicked, the page will scroll to the location with the bookmark.
+책갈피를 사용해서, html 문서가 길때 찾아가기 편하게 만들라는 내용같음 -->
+
+    <h2 id="C4">Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h1 id="my">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+        function displayResult() {
+            document.getElementById("my").innerHTML = "Have a nice day!";
+        }
+        //자바스크립트에서 아이디 애트리뷰트 사용예
+    </script>
+
+
+</body>
+
+</html>
