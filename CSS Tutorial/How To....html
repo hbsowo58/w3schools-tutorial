@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>How To...</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    h1 {
+      color: maroon;
+      margin-left: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  External style sheet
+  Internal style sheet
+  Inline style
+  <!-- 스타일 시트 넣는 세가지 방법 -->
+
+  External Style Sheet
+  With an external style sheet, you can change the look of an entire website by changing just one file!
+  <!-- 외부 스타일시트, 한가지 파일로 웹사이트 전체 변경가능한것 보기 -->
+
+  Each page must include a reference to the external style sheet file inside the link element. The link element goes
+  inside the head section:
+  <!-- 각 페이지들은 외부 스타일시트 안에있는 링크 요소들을 참조함 -->
+
+  Internal Style Sheet
+  An internal style sheet may be used if one single page has a unique style.
+  <!-- 내부 스타일시트, 한페이지의 독특한 스타일시트 이용가능 -->
+
+  Internal styles are defined within the style element, inside the head section of an HTML page:
+  <!-- HTML page의 head섹션내에서 정의됨 -->
+
+  Inline Styles
+  An inline style may be used to apply a unique style for a single element.
+  <!-- 내부와 비슷한내용 -->
+
+  To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS
+  property.
+  <!-- 인라인시트는 속성을 요소안에 넣어서 사용, css속성을 포함해서 스타일속성을 만듬 -->
+
+
+  <h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+  Multiple Style Sheets
+  <!-- 다중스타일시트 -->
+  If some properties have been defined for the same selector (element) in different style sheets, the value from the
+  <!-- 만약 몇개의 속성들이 같은 선택자에 다른 스타일시트가 정의되면 마지막에 작성된게 사용된다. -->
+  last read style sheet will be used.
+  
+  Cascading Order
+  <!-- 중첩순서 -->
+  What style will be used when there is more than one style specified for an HTML element?
+  <!-- html요소에서 어떤 스타일이 특별하게 사용될까? -->
+  All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has
+  the highest priority:
+  <!-- 모든 스타일 페이지는 중첩된다, 새로운 가상의 스타일시트를 룰을 따름으로써, 하나의 하이라이트 속성을 -->
+
+  Inline style (inside an HTML element)
+  External and internal style sheets (in the head section)
+  Browser default
+  So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+  <!-- 따라서 인라인 스타일이 가장 우선 순위가 높으며 외부 및 내부 스타일과 브라우저 기본값을 재정의합니다. -->
+</body>
+
+</html>

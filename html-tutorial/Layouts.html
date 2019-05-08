@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;
+      /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 300px;
+      /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>CSS Layout Float</h2>
+  <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will
+    stack on top of each other.</p>
+  <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML
+    Responsive.)</p>
+
+  <header>
+    <h2>Cities</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#">London</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>London</h1>
+      <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan
+        area of over 13 million inhabitants.</p>
+      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to
+        its founding by the Romans, who named it Londinium.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+
+  <!-- <header> - Defines a header for a document or a section
+    문서 섹션의 제목을 정의
+    <nav> - Defines a container for navigation links
+    네비게이션 링크를 컨테이너 박스를 위해 정의
+    <section> - Defines a section in a document
+    문서의 섹션정의
+    <article> - Defines an independent self-contained article
+    스스로 독립적인 아티클 정의
+    <aside> - Defines content aside from the content (like a sidebar)
+    컨텐츠와 사이드에 있는 컨텐츠 정의
+    <footer> - Defines a footer for a document or a section
+    문서 섹션의 끝정의
+    <details> - Defines additional details
+    추가적인것 정의
+    <summary> - Defines a heading for the <details> element
+      요약 정의
+    
+    HTML Layout Techniques
+    레이아웃기술
+There are five different ways to create multicolumn layouts. Each way has its pros and cons:
+다섯가지 방법있음 각각 장단점을가짐
+
+HTML tables (not recommended)
+테이블, 비추천
+CSS float property
+플로트 속성
+CSS flexbox
+플랙스박스
+CSS framework
+프레임워크
+CSS grid
+그리드
+
+Which One to Choose?
+어떤것을고를까
+HTML Tables
+The <table> element was not designed to be a layout tool! The purpose of the <table> element is to display tabular data. So, do not use tables for your page layout! They will bring a mess into your code. And imagine how hard it will be to redesign your site after a couple of months.
+테이블요소는 레이아웃툴로 디자인되지 않았다. 그 목적은 테이블로 데이터를 보여주는것, 그래서 페이지 레이아웃을 위해 사용하지마라, 그것은 코드에 매스를 가져올것이고, 얼마나 생각해내기 힘들지 상상해보라
+Tip: Do NOT use tables for your page layout!
+
+CSS Frameworks
+If you want to create your layout fast, you can use a framework, like W3.CSS or Bootstrap.
+빠르게 만들기 원한다면 프레임워크, 부트스트랩같은
+CSS Floats
+It is common to do entire web layouts using the CSS float property. Float is easy to learn - you just need to remember how the float and clear properties work. Disadvantages: Floating elements are tied to the document flow, which may harm the flexibility. Learn more about float in our CSS Float and Clear chapter.
+전체 웹사이트를 위해 플로트 속성을 사용할수 있고, 쉽게배우고 클리어와 플로트속성만 알면된다. 단점으로는 플로팅 요소가 문서에 떠잇어서 유연하지 않고 클리어챕터와 플로트를 배운뒤 사용가능하다
+CSS Flexbox
+Flexbox is a new layout mode in CSS3.
+플랙스박스는 css3에 새로운 레이아웃
+Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices. Disadvantages: Does not work in IE10 and earlier.
+
+flexbox를 사용하면 페이지 레이아웃이 다른 화면 크기와 다른 디스플레이 장치를 수용해야 할 때 요소가 예상대로 작동합니다. 단점 : IE10 이하에서는 작동하지 않습니다.
+
+CSS Grid View
+The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+그리드를 사용하면 그리드 기반으로 행과열을 나누고 쉽게 웹사이트를 디자인하여 위치시킬수 있습니다.
+Disadvantages: Does not work in IE nor in Edge 15 and earlier.
+익스플로어와 엣지에서 만들수없습니다.
+
+
+
+
+    
+    
+    
+    
+    
+    -->
+
+</body>
+
+</html>

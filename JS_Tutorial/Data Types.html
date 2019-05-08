@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Data Types</title>
+</head>
+
+<body>
+  The Concept of Data Types
+  In programming, data types is an important concept.
+  <!-- 프로그래밍에서 데이터타입은 중요한 개념이다 -->
+  To be able to operate on variables, it is important to know something about the type.
+  <!-- 변수를 연산하고 그것이 어떤 타입으로 나올지 아는 것은 중요하다 -->
+  Without data types, a computer cannot safely solve this:
+  <!-- 데이터 타입없이 컴퓨터는 이것을 안전하게 해결할 수 없다 -->
+  JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+  <!-- 자바스크립트는 표현식을 왼쪽으로부터 오른쪽으로 계산한다 다른 순서는 다른 결과를 낳는다 -->
+
+  JavaScript Strings
+  <!--문자열 -->
+  A string (or a text string) is a series of characters like "John Doe".
+  <!-- 문자열이나 글자는 글자들의 모임이다 -->
+  Strings are written with quotes. You can use single or double quotes:
+  <!-- 문자열은 ''또는 ""로 작성될 수 있다 -->
+  JavaScript Numbers
+  JavaScript has only one type of numbers.
+  <!-- 한가지 숫자형을 가진다 -->
+  Numbers can be written with, or without decimals:
+  <!-- 숫자형은 10진수나 10진수 없이 작성할 수 있다 -->
+  JavaScript Booleans
+  Booleans can only have two values: true or false.
+  <!-- 불리언값은 오직 트루 펄스 두가지 값을 갖는다 -->
+  JavaScript Arrays
+  JavaScript arrays are written with square brackets.
+  <!-- 배열은 대괄호로 작성한다 -->
+  Array items are separated by commas.
+  <!-- 배열 아이템은 콤마로 나열한다 -->
+  JavaScript Objects
+  JavaScript objects are written with curly braces {}.
+  <!-- 객체는 중괄호로 작성한다 -->
+  Object properties are written as name:value pairs, separated by commas.
+  <!-- 객체 속성은 네임:값 쌍으로 이루어져있고 콤마로 구분한다 -->
+  The typeof Operator
+  You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+  <!-- 타입오브 연산자로 자바스크립트 변수의 타입을 찾아서 사용할 수 있다 -->
+  The typeof operator returns the type of a variable or an expression:
+  <!-- 타입오브 연산자는 반환값으로 변수 또는 표현식의 자료형을 갖는다 -->
+  Undefined
+  In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+  <!-- 자바스크립트에서 변수의 값이 없을떄, 정의되지 않은 자료형을 갖고 이 타입은 오직 정의되지 않음뿐이다 -->
+  Empty Values
+  An empty value has nothing to do with undefined.
+  <!-- 빈값은 아무것도 없고 정의되지 않은것이다 -->
+  An empty string has both a legal value and a type.
+  <!-- 빈 문자열은 레갈값과 타입을 가졌다 -->
+  Null
+  In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+  <!-- 자바스크립트의 널은 나씽이다. 이것은 무언가 존재하지않는다는 것을 알린다 -->
+  Unfortunately, in JavaScript, the data type of null is an object.
+  <!-- 불행하게도 ,자바스ㅡ립트에서는 널 자료형이 객체형이다(버그) -->
+  You can consider it a bug in JavaScript that typeof null is an object. It should be null.
+  <!--  버그라 생각할 수 있지만, 이것은 반드시 널이다 -->
+  You can empty an object by setting it to null:
+  <!--  빈객체에 널을 세팅할 수 있다 -->
+  Difference Between Undefined and Null
+  <!-- 정의되지 않음과 널의차이 -->
+  undefined and null are equal in value but different in type:
+  <!-- 정의되지 않음은 값이 없다는게 같다 그러나 자료형은 다르다 -->
+  typeof undefined // undefined
+  typeof null // object
+  <!-- 타입오브 연산자를 사용하면 언디파인드는 언디파인 자료형, 널은 객체 -->
+  null === undefined // false
+  null == undefined // true
+  <!-- 널과 언디파인의 자료형까지는 갖지않지만 ,값은 같다 -->
+
+  Complex Data
+  The typeof operator can return one of two complex types:
+  <!-- 복잡한 데이터타입은 두가지 데이터타입의 한가지 반환값을 가질 수 있다 -->
+  function
+  object
+  The typeof operator returns object for both objects, arrays, and null.
+  <!-- 함수,객체는 객체,배열,그리고 널값의 반환값을 갖는다 -->
+  The typeof operator does not return object for functions.
+  <!-- 타입오브 연산자는 반 함수를 객체로 반환할 수 없다 -->
+
+
+  <p id="demo"></p>
+
+  <script>
+    var x;         // Now x is undefined
+    x = 5;         // Now x is a Number
+    x = "John";      // Now x is a String
+
+    document.getElementById("demo").innerHTML = x;
+  </script>
+</body>
+
+</html>
