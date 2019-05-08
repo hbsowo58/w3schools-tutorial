@@ -47,4 +47,6 @@ JS 시작, 인트로덕션 추가 자바스크립트가 HTML에서 무슨역할�
 # 2019 04 26
 - html 폴더 iframe , js폴더 operator 추가
 # 2019 05 02
-- html 폴더 javascripit js 폴더 Arithmetic 
+- html 폴더 javascripit js 폴더 Arithmetic 추가
+# 2019 05 03
+- html 폴더 File Paths, css 폴더 CSS Syntax and Selectors , js폴더 Assignment 
