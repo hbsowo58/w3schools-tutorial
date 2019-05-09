@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Web Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing:border-box;
+    }
+    
+    .left {
+      background-color:#2196F3;
+      padding:20px;
+      float:left;
+      width:20%; /* The width is 20%, by default */
+    }
+    
+    .main {
+      background-color:#f1f1f1;
+      padding:20px;
+      float:left;
+      width:60%; /* The width is 60%, by default */
+    }
+    
+    .right {
+      background-color:#4CAF50;
+      padding:20px;
+      float:left;
+      width:20%; /* The width is 20%, by default */
+    }
+    
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width:800px) {
+      .left, .main, .right {
+        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+
+    * {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+    </style>
+</head>
+<body>
+  What is Responsive Web Design?
+  <!-- 반응형 웹디자인이란 -->
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+<!-- 모든기기에서 html과 css를 크기조절,숨기기 등을 자동적으로 하는것 -->
+
+Note: A web page should look good on any device!
+<!-- 웹페이지가 모든기기에서 좋게보이는것은 아닙니다 -->
+
+Setting The Viewport
+When making responsive web pages, add the following meta element in all your web pages:
+<!-- 반응형웹페이지를 만들려면, 메타요소를 웹페이지에 추가 -->
+
+Responsive Images
+<!-- 반응형이미지 -->
+Responsive images are images that scale nicely to fit any browser size.
+<!-- 반응형이미지들은 어떤 브라우저사이즈에도 잘맞게 된다 -->
+Using the width Property
+<!-- 너비속성사용 -->
+If the CSS width property is set to 100%, the image will be responsive and scale up and down:
+<!-- 100%로 너비속성이 사용되면, 반응형으로 커지거나 작아질것임 -->
+<img src="img_girl.jpg" style="width:100%;">
+the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.
+<!-- 원본보다 커질수 있다,해결책은 많은방법이 있는데, 너비의 한계를 속성대신에 주는것이다 -->
+Using the max-width Property
+If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+<!-- max-width 속성을 100 %로 설정하면 원본 크기보다 커야하지만 확대되지 않는 이미지는 축소됩니다. -->
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+Show Different Images Depending on Browser Width
+<!-- 브라우저 넓이에 독립되게 다른 이미지 보여주기 -->
+The HTML picture element allows you to define different images for different browser window sizes.
+<!-- HTML picture 요소를 사용하면 브라우저 창 크기에 따라 서로 다른 이미지를 정의 할 수 있습니다. -->
+Resize the browser window to see how the image below change depending on the width:
+<!-- 브라우저 창 크기를 조정하여 너비에 따라 이미지가 어떻게 달라지는 지 확인하십시오. -->
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+
+Responsive Text Size
+<!-- 반응형 텍스트 크기 -->
+The text size can be set with a "vw" unit, which means the "viewport width".
+<!-- 텍스트 크기는 vw로 셋팅될수 있고, 이것은 뷰포트 너비를 의미함 -->
+That way the text size will follow the size of the browser window:
+<!-- 텍스트 사이즈 조절은 윈도우 브라우저사이즈를 따름 -->
+<h1 style="font-size:10vw">Hello World</h1>
+Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+<!-- 뷰포트는 윈도우의 브라우저 크기이며, 1vw는 1%너비이고 만약 50cm너비라면 1vw는 0.5cm임 -->
+Media Queries
+<!-- 미디어쿼리 -->
+In addition to resize text and images, it is also common to use media queries in responsive web pages.
+<!-- 텍스트와 이미지 재설정에는, 미디어쿼리라는 반응형 페이지를 만드는것을 사용한다 -->
+With media queries you can define completely different styles for different browser sizes.
+<!-- 미디어쿼리와 함꼐, 완벽한 다른스타일의 브라우저사이즈를 정의할 수 있다 -->
+Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens:
+<!-- 예 : 브라우저 창 크기를 조정하면 아래의 세 div 요소가 큰 화면에 가로로 표시되고 작은 화면에 세로로 표시됩니다. -->
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Hello World</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+Responsive Web Design - Frameworks
+<!-- 반응형 웹디자인 프레임워크 -->
+There are many existing CSS Frameworks that offer Responsive Design.
+<!-- 많은 css프레임워크가 존재하는데 -->
+They are free, and easy to use.
+<!-- 공짜고 쉽게사용가능한데 -->
+Using W3.CSS
+A great way to create a responsive design, is to use a responsive style sheet, like W3.CSS
+<!-- 좋은방법으로 w3.css같은게있음 -->
+W3.CSS makes it easy to develop sites that look nice at any size; desktop, laptop, tablet, or phone:
+<!-- 쉽게 사이트 개발이가능하고 어떤 사이즈든 조절가능 -->
+Bootstrap
+Another popular framework is Bootstrap, it uses HTML, CSS and jQuery to make responsive web pages.
+<!-- 다른대중적인 프레임워크는 부트스트랩으로 html,css,jquery를 반응형 웹디자인을 함 -->
+</body>
+</html>

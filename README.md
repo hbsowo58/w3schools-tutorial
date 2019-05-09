@@ -50,3 +50,9 @@ JS 시작, 인트로덕션 추가 자바스크립트가 HTML에서 무슨역할�
 - html 폴더 javascripit js 폴더 Arithmetic 추가
 # 2019 05 03
 - html 폴더 File Paths, css 폴더 CSS Syntax and Selectors , js폴더 Assignment 
+# 2019 05 07
+- html 폴더 head css폴더how to js폴더 Data Types추가
+# 2019 05 08
+- html 폴더 layout css폴더 Colors js폴더 function추가
+# 2019 05 09
+- html 폴더 Responsive Web Design css폴더 Backgrounds js폴더 Objects 추가
