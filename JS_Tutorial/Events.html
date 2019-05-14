@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+</head>
+
+<body>
+
+  HTML events are "things" that happen to HTML elements.
+  <!-- HTML 이벤트들은 html요소에 무언가 일어나는일입니다. -->
+  When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+  <!-- 자바스크립트 페이지에 사용했을떄, 자바스크립트는 이 이벤트들을 반응합니다. -->
+  HTML Events
+  An HTML event can be something the browser does, or something a user does.
+  <!-- html이벤트는 브라우저에 무언가 일을하거나 유저에게 무슨일을 합니다. -->
+  Here are some examples of HTML events:
+  <!-- 여기 몇가지 html 이벤트가있음 -->
+  An HTML web page has finished loading
+  <!-- 웹페이지가 로딩이 끝났다 -->
+  An HTML input field was changed
+  <!-- htmp 인풋 필드가 바꼈다 -->
+  An HTML button was clicked
+  <!-- html버튼이 클릭됬다. -->
+  Often, when events happen, you may want to do something.
+  <!-- 종족 이벤트가 발생하면 무언가 원한다 -->
+  JavaScript lets you execute code when events are detected.
+  <!-- 자바스크립트는 코드를 실행할때 감지된다 -->
+  HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+  <!-- html은 이벤트핸들러라는 속성을 허용해서 자바스크립트 코드와함께, html 요소에 추가된다 -->
+  With single quotes:
+  <!-- 홑 따옴표와 함께 -->
+  <element event='some JavaScript'>
+    <element event="some JavaScript">
+
+      <button onclick="this.innerHTML=Date()">The time is?</button>
+      <button onclick="displayDate()">The time is?</button>
+
+      onchange An HTML element has been changed
+      <!-- html요소를 바꾼다 온체인지 -->
+      onclick The user clicks an HTML element
+      <!-- 유저가 html요소를 클릭했다 -->
+      onmouseover The user moves the mouse over an HTML element
+      <!-- 유저가 html요소 위에 마우스를 오버했다 -->
+      onmouseout The user moves the mouse away from an HTML element
+      <!-- 유저가 마우스를 html요소로 부터 마우스아웃했다 -->
+      onkeydown The user pushes a keyboard key
+      <!-- 유저가 키보드를 클릭했다 -->
+      onload The browser has finished loading the page
+      <!-- 브라우저가 페이지로딩을 완료했다 -->
+
+      What can JavaScript Do?
+      <!-- 자바스크립트가 무엇을 할 수 있을까? -->
+      Event handlers can be used to handle, and verify, user input, user actions, and browser actions:
+      <!-- 이벤트 핸들러는 핸들할 수 있고, -->
+      Things that should be done every time a page loads
+      <!-- 페이지가 로드될때 마다 수행해야하는 일 -->
+      Things that should be done when the page is closed
+      <!-- 페이지가 닫힐때마다 하는일 -->
+      Action that should be performed when a user clicks a button
+      <!-- 버튼이 클릭됬을때 발생하는일  -->
+      Content that should be verified when a user inputs data
+      And more ...
+      <!-- 사용자가 데이터를 입력 할 때 확인해야하는 콘텐츠 -->
+      Many different methods can be used to let JavaScript work with events:
+      <!-- 많은 다른 메소드를 사용하여 JavaScript가 이벤트와 함께 작동하도록 할 수 있습니다. -->
+      
+      HTML event attributes can execute JavaScript code directly
+      <!-- html이벤트 요소는 자바스크립트 코드를 즉시 실행할 수 있습니다. -->
+      HTML event attributes can call JavaScript functions
+      <!-- html이벤트 요소는 자바스크립트 함수를 부를 수 있습니다. -->
+      You can assign your own event handler functions to HTML elements
+      <!-- 스스로 이벤트핸들러 함수에 html요소에 할당 가능 -->
+      You can prevent events from being sent or being handled
+      <!-- 이벤트가 보내지거나 처리되는 것을 막을 수 있습니다. -->
+      And more ...
+</body>
+
+</html>
