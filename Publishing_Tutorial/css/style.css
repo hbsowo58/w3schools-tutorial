@@ -54,9 +54,10 @@ main header .header-content-container::before{
 .main .profile{
     background-color: orange;
     height:220px;
-    /* width:200px; */
-    /* border-radius: 100px;
-    margin: 0px auto; */
+    width:200px;
+    border-radius: 100px;
+    margin: 0px auto;
+    box-shadow: 8px 9px 11px blue;
 }
 
 .main .name-card{

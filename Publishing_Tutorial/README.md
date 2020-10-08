@@ -206,7 +206,36 @@ navigation에는 float left, write에는 float right준후 header-content-contai
 
 각각 레이아웃 배치를 위해 padding으로 위치조절 및 박스상자가 늘어나는것을 방지하기위해
 
+box-sing: border box와 (전역 유지보수 예약)
+
 padding:30px을 주었습니다
+
+
+
+```css
+...
+.main .profile{
+    background-color: orange;
+    height:220px;
+    width:200px;
+    border-radius: 100px;
+    margin: 0px auto;
+    box-shadow: 8px 9px 11px blue;
+}
+...
+```
+
+
+
+profile영역 레이아웃을 위해 높이에 비례하여 radius속성으로 원 레이아웃을 구성한후,
+
+가운데 정렬 및 box-shadow 속성으로 그림자 레이아웃을 잡아두었습니다
+
+
+
+
+
+
 
 
 
