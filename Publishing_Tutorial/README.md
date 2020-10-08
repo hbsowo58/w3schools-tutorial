@@ -304,3 +304,56 @@ name-card 영역을 레이아웃하기 위해
 
 ---
 
+```html
+...
+<div class="direct-message">
+    <div>
+        <button><i class="fab fa-facebook"></i>Visit My Facebook page</button>
+    </div>
+    <div class="email">
+        <button><i class="far fa-envelope"></i>hadaboni80@naver.com</button>
+    </div>
+</div>
+```
+
+```css
+.main .direct-message{
+    background-color: blue;
+    height:90px;
+    padding:0px 30px;;
+    box-sizing: border-box;
+}
+
+.direct-message div{
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size:16px;
+}
+
+.direct-message .email{
+    border-top: 1px solid darkblue
+}
+
+.direct-message button{
+    background-color: #fff;
+}
+
+.direct-message i{
+    margin-right: 10px;
+}
+```
+
+
+
+direct-message 영역 layout을 위해 div를 2개만들어서 각자의 높이를 주고 세로 가운데 정렬과 글자 가로 가운데 정렬한후
+
+아랫div의 border-top속성만 주어서 구분선을 만들었습니다 아이콘과 메시지를 보낼것이라 예상되어 버튼 태그로 구성하였고
+
+버튼의 외곽선 문제가 발생하였습니다.
+
+
+
+![image-20201008135229395](C:\Users\82109\AppData\Roaming\Typora\typora-user-images\image-20201008135229395.png)
+
