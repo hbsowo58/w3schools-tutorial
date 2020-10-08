@@ -212,6 +212,16 @@ padding:30px을 주었습니다
 
 
 
+<img width="1277" alt="header" src="https://user-images.githubusercontent.com/48181483/95412359-c7986e00-0963-11eb-8b1e-2a4fd27a6e56.png">
+
+
+
+
+
+
+
+
+
 ```css
 ...
 .main .profile{
@@ -231,13 +241,66 @@ profile영역 레이아웃을 위해 높이에 비례하여 radius속성으로 �
 
 가운데 정렬 및 box-shadow 속성으로 그림자 레이아웃을 잡아두었습니다
 
+<img width="1277" alt="profile" src="https://user-images.githubusercontent.com/48181483/95412226-78523d80-0963-11eb-9ac9-5170cdd87ef4.png">
+
+---
 
 
 
+```css
+.main .name-card{
+    background-color: yellow;
+    height:70px;
+    padding-top:15px;
+}
+
+.name-card div{
+    text-align: center;
+}
+```
+
+name-card 영역을 레이아웃하기 위해
+
+아래에 이름칸과 소개칸용 div를 만들어두고, 컨텐츠만 가운데 정렬을 위해 text-align 속성을 사용하였고 profile과의 여백을 위해 padding-top속성을 사용하였습니다 배경이 사라지면 여백이 느껴질것입니다.
+
+<img width="1277" alt="name-card" src="https://user-images.githubusercontent.com/48181483/95412183-56f15180-0963-11eb-95bb-e264f60d9a34.png">
+
+---
+
+```html
+...
+<div class="more-btn">
+    <button>view more</button>
+</div>
+...
+```
+
+```css
+.main .more-btn{
+    background-color: green;
+    height:60px;
+    padding-top:15px;
+}
+
+.more-btn button{
+    background-color: white;
+    text-align: center;
+    width: 175px;
+    height:30px;
+    display:block;
+    margin:0px auto;
+    box-shadow: 15px 10px 45px white;
+    text-shadow:0px 0px 1rem black;
+}
+```
+
+더보기 버튼 영역을 위해 마크업을 추가한후, 
+
+글자 가로 가운데정렬, 버튼 가로가운데정렬, 글자와 박스 모두 쉐도우를 주었습니다.
 
 
 
+<img width="1277" alt="view mor btn" src="https://user-images.githubusercontent.com/48181483/95412114-2b6e6700-0963-11eb-9d62-294714a0ef8e.png">
 
-
-
+---
 

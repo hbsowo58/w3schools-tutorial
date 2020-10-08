@@ -53,7 +53,7 @@ main header .header-content-container::before{
 
 .main .profile{
     background-color: orange;
-    height:220px;
+    height:220px; 
     width:200px;
     border-radius: 100px;
     margin: 0px auto;
@@ -63,22 +63,64 @@ main header .header-content-container::before{
 .main .name-card{
     background-color: yellow;
     height:70px;
+    padding-top:15px;
+}
+
+.name-card div{
+    text-align: center;
 }
 
 .main .more-btn{
     background-color: green;
     height:60px;
+    padding-top:15px;
+}
+
+.more-btn button{
+    background-color: white;
+    text-align: center;
+    width: 175px;
+    height:30px;
+    display:block;
+    margin:0px auto;
+    box-shadow: 15px 10px 45px white;
+    text-shadow:0px 0px 1rem black;
 }
 
 .main .direct-message{
     background-color: blue;
     height:90px;
+    padding:0px 30px;;
+    box-sizing: border-box;
 }
+
+.direct-message div{
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size:16px;
+}
+
+.direct-message .email{
+    border-top: 1px solid darkblue
+}
+
+.direct-message button{
+    background-color: #fff;
+}
+
+.direct-message i{
+    margin-right: 10px;
+}
+
 
 .main .another-page{
     background-color: purple;
     height:60px;
 }
+
+
 
 
 
