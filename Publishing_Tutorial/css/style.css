@@ -28,33 +28,28 @@ body .container{
 .main header{
     background-color: red;
     height:50px;
-    padding:10px;
-}
-
-/* main header .headerContentContainer::before{
-    content: '';
-    clear : both;
-    display: block;
+    padding:30px;
+    box-sizing: border-box;
 }
 
 
 .main header .navigation{
     background-color: pink;
     float:left;
+    font-size:20px;
 }
 
 .main header .write{
     background-color: aqua;
     float:right;
-} */
-
-/* .main header i{
     font-size:20px;
 }
 
-.fa-sticky-note{
-    float:right;
-} */
+main header .header-content-container::before{
+    content: '';
+    clear : both;
+    display: block;
+}
 
 .main .profile{
     background-color: orange;

@@ -18,6 +18,7 @@
 
 
 4. 아이콘은 fontaswome사용
+5. '기능'이 없이 디자인용 div가 필요한 경우에는 container라고 명명
 
 
 
@@ -90,7 +91,6 @@ body .container{
 .main header{
     background-color: red;
     height:50px;
-    padding:10px;
 }
 
 .main .profile{
@@ -137,6 +137,76 @@ body .container{
 body태그에 직접적으로 background속성을 사용하지 않으려는 시도 때문에 container의 높이가 자식의 main태그들의 높이의 합을 자동으로 계산하여 영역을 유지하기 때문에 배경전체를 뒤덮지는 못했습니다( 추후 해결할문제)
 
 
+
+
+
+header태그 배치를 위해
+
+
+
+```html
+<head>
+  <script src="https://kit.fontawesome.com/e417ed1b75.js"crossorigin="anonymous"></script>
+</head>
+
+
+...
+<header>
+    <div class="header-content-container">
+        <div class="navigation">
+            <i class="fas fa-align-justify"></i>
+        </div>
+        <div class="write"></i>
+        <i class="far fa-sticky-note"></i>
+    </div>
+    </div>
+</header>
+...
+```
+
+네비게이션과 쓰기 기능을 배치해야하는데 레이아웃 배치를 위해 컨테이너로 감싼후
+
+
+
+```css
+...
+.main header{
+    background-color: red;
+    height:50px;
+    padding:30px;
+    box-sizing: border-box;
+}
+.main header .navigation{
+    background-color: pink;
+    float:left;
+    font-size:20px;
+}
+
+.main header .write{
+    background-color: aqua;
+    float:right;
+    font-size:20px;
+}
+
+main header .header-content-container::before{
+    content: '';
+    clear : both;
+    display: block;
+}
+...
+```
+
+
+
+navigation에는 float left, write에는 float right준후 header-content-container에 플로팅을 해제하였습니다.  그후 안에 폰트어썸 라이브러리의 아이콘을 사용해 넣어주었는데 나중에 특정 기능을 추가할 수 있을 것 같아 div로 감싸주었고 이는 다른태그로의 전환 또는 이벤트등을 추가할 수 있을 것 같습니다 ( 수정할 수 도있습니다 div없애는 방향으로)
+
+폰트어썸 아이콘이기 때문에 font-size로 크기조절 가능합니다.
+
+
+
+각각 레이아웃 배치를 위해 padding으로 위치조절 및 박스상자가 늘어나는것을 방지하기위해
+
+padding:30px을 주었습니다
 
 
 
