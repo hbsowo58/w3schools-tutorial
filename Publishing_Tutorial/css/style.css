@@ -1,0 +1,89 @@
+@charset 'utf-8';
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body .container{
+    background-color: skyblue;
+    padding:25px;
+}
+
+.container .main{
+    background-color: white;
+    width:380px;
+    height:610px;
+    margin: 0px auto;
+}
+
+.main header{
+    background-color: red;
+    height:50px;
+    padding:10px;
+}
+
+/* main header .headerContentContainer::before{
+    content: '';
+    clear : both;
+    display: block;
+}
+
+
+.main header .navigation{
+    background-color: pink;
+    float:left;
+}
+
+.main header .write{
+    background-color: aqua;
+    float:right;
+} */
+
+/* .main header i{
+    font-size:20px;
+}
+
+.fa-sticky-note{
+    float:right;
+} */
+
+.main .profile{
+    background-color: orange;
+    height:220px;
+    /* width:200px; */
+    /* border-radius: 100px;
+    margin: 0px auto; */
+}
+
+.main .name-card{
+    background-color: yellow;
+    height:70px;
+}
+
+.main .more-btn{
+    background-color: green;
+    height:60px;
+}
+
+.main .direct-message{
+    background-color: blue;
+    height:90px;
+}
+
+.main .another-page{
+    background-color: purple;
+    height:60px;
+}
+
+
+
+/* 고정픽셀을 사용하는건 위험하지않나? */
