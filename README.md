@@ -11,22 +11,22 @@ mark: 형광펜 ins: 삽입됨 del:삭제됨 bdo: 텍스트 방향 지정
 
 
 # 2019 04 15
-주석처리, color에 대한 다양한 방법 :rgba hsl, hsla등 
+주석 처리, color에 대한 다양한 방법 :rgba hsl, hsla 등
 
 # 2019 04 16
 css,links a태그에 타겟 속성 기본값 self, 많이쓰이는 blank(새창) top(브라우저 탭 최상단)등 추가
 JS 시작, 인트로덕션 추가 자바스크립트가 HTML에서 무슨역할을 하는지 간단하게 맛봄
 
 # 2019 04 17
-- html 폴더 image 추가 js폴더 Whereto 추가
-- 이미지 태그 사용하여 이미지 삽입가능 ( 배경으로도 가능) 및, picture태그 map
-+ 스크립트 태그는 헤더와 바디사이에 존재할 수 있으며, 외부에 파일로 분류할시 html코드가 간단해지고 수정에 용이하며 여러개로 나누고 빠르게 로딩가능
+- html 폴더 image 추가 js 폴더 Whereto 추가
+- 이미지 태그 사용하여 이미지 삽입 가능 ( 배경으로도 가능) 및, picture 태그 map
++ 스크립트 태그는 헤더와 바디 사이에 존재할 수 있으며, 외부에 파일로 분류할 시 html 코드가 간단해지고 수정에 용이하며 여러 개로 나누고 빠르게 로딩 가능
 
 # 2019 04 18
 - html 폴더 table 추가 js 폴더 output 추가
 
-+ 캡션 caption태그, 열확장 행확장 기능 존재 html의 핵심은 table와 div이라고생각
-- output을 출력하는 다양한 방법존재. 
++ 캡션 caption 태그, 열확장 행확장 기능 존재 html의 핵심은 table와 div이라고 생각
+- output을 출력하는 다양한 방법 존재. 
 
 # 2019 04 19
 - html 폴더 lists 추가 js 폴더 Statements 추가
