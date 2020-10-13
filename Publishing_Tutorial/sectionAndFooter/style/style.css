@@ -1,2 +1,20 @@
 @charset 'utf-8';
 @import './reset.css';
+
+
+section{
+    background: #eee;
+}
+
+section div.inner{
+    width:1180px;
+    margin: 0px auto;
+    padding: 150px 0px;
+}
+
+/* .pic{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    float:left;
+} */
