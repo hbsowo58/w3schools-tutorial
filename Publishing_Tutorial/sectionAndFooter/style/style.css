@@ -4,17 +4,70 @@
 
 section{
     background: #eee;
+    padding: 150px 0px;
 }
 
 section div.inner{
     width:1180px;
     margin: 0px auto;
-    padding: 150px 0px;
 }
 
-/* .pic{
-    width:100px;
-    height: 100px;
-    background-color: red;
+.inner h1{
+    margin-bottom:100px;
+    font:bold 22px/1 "arial"; color: #aaa;
+}
+
+.wrap article{
+    width:48%;
+    /* width:480px; */
+    /* 1180에서 컨텐츠 width값은 480이라고 하셨는데
+    레이아웃 배치가 안맞아서 임시조치 width값 조절에 어려움을 느낌
+     */
     float:left;
-} */
+    margin-right:20px;
+}
+
+article div.pic{
+    width: 20%;
+    height: 146px;
+    /* pic의 높이값 조절에 어려움을 느낌 
+    pic의 높이는 어떻게 결정되야 하는지 모르겠음
+    */
+    background: #ccc;
+    float:left;
+}
+
+article .content{
+    padding:20px;
+    background: #eee;
+    width:80%;
+    float:left;
+    margin-bottom:20px;
+}
+
+.content h2{
+    color: #aaa
+}
+
+.content p{
+    margin-bottom:10px;
+}
+
+.content i{
+    margin-right:10px;
+    color: #aaa;
+    /* 폰트어썸 두번째 아이콘 어떤건지 몰라서
+    다른것 넣고 레이아웃작성 */
+}
+
+/* footer */
+
+footer{
+    background: #aaa;
+}
+
+footer div.inner{
+    width:1180px;
+    margin: 0px auto;
+    background-color: red;
+}
