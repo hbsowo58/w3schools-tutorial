@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import './reset.css';
 
+/* section */
 
 section{
     background: #eee;
@@ -70,7 +71,6 @@ footer{
 footer div.inner{
     width:1180px;
     margin: 0px auto;
-    /* background-color: red; */
 }
 
 .inner .header{
@@ -86,7 +86,6 @@ footer div.inner{
 }
 
 .wrap div.icons{
-    /* background-color: yellow; */
     float:right;
     color: #ccc;
 }
@@ -96,5 +95,19 @@ div.icons i{
 }
 div.icons i:last-of-type{
     margin-right:0px;
+}
+
+div.inner .logo{
+    font-size:22px;
+    float:left;
+    color: #bbb;
+}
+
+div.inner .copyright{
+    float:right;
+    width:400px;
+    font-size:12px;
+    text-align: right;
+    color: #ccc;
 }
 
