@@ -19,7 +19,7 @@ section div.inner{
 }
 
 .wrap article{
-    width:48%;
+    /* width:48%; */
     /* width:480px; */
     /* 1180에서 컨텐츠 width값은 480이라고 하셨는데
     레이아웃 배치가 안맞아서 임시조치 width값 조절에 어려움을 느낌
@@ -27,6 +27,18 @@ section div.inner{
     float:left;
     margin-right:20px;
 }
+
+/* 항상 화면에 꽉차도록 2,4번째요소에 margin-right제거 */
+
+/* /* .wrap article:nth-of-type(2n){
+    margin-right:0px;
+} */
+
+.wrap article:nth-of-type(2n){
+    margin-right:0px
+}
+
+
 
 article div.pic{
     width: 20%;
