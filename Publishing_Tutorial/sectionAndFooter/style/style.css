@@ -64,10 +64,37 @@ article .content{
 
 footer{
     background: #aaa;
+    padding: 50px 0px;
 }
 
 footer div.inner{
     width:1180px;
     margin: 0px auto;
-    background-color: red;
+    /* background-color: red; */
 }
+
+.inner .header{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.wrap ul li{
+    float:left;
+    margin-right:10px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.wrap div.icons{
+    /* background-color: yellow; */
+    float:right;
+    color: #ccc;
+}
+div.icons i{
+    margin-right:10px;
+    font-size: 18px;
+}
+div.icons i:last-of-type{
+    margin-right:0px;
+}
+
