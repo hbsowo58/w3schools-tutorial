@@ -34,7 +34,7 @@ section div.inner{
 
 article div.pic{
     width: 20%;
-    height: 146px;
+    height: 156px;
     /* pic의 높이값 조절에 어려움을 느낌 
     pic의 높이는 어떻게 결정되야 하는지 모르겠음
     */
@@ -68,7 +68,7 @@ article .content{
 /* footer */
 
 footer{
-    background: #aaa;
+    background: #444;
     padding: 50px 0px;
 }
 
@@ -82,17 +82,29 @@ footer div.inner{
     margin-bottom: 20px;
 }
 
-.wrap ul li{
+ul.wrap{
+    float:left;
+}
+
+
+ul.wrap li{
     float:left;
     margin-right:10px;
     margin-bottom: 10px;
-    color: #ccc;
 }
 
-.wrap div.sns{
-    float:right;
-    color: #ccc;
+ul.wrap li a{
+    color: #888;
 }
+
+div.wrap div.sns{
+    float:right;
+}
+
+div.sns li a{
+    color:#888;
+}
+
 div.sns i{
     margin-right:10px;
     font-size: 18px;
@@ -104,13 +116,13 @@ div.sns i:last-of-type{
 div.inner .logo{
     font-size:22px;
     float:left;
-    color: #bbb;
+    color: #888;
 }
 
 div.inner .info{
     float:right;
     font-size:12px;
     text-align: right;
-    color: #ccc;
+    color: #888;
 }
 

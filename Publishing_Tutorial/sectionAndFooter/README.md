@@ -44,10 +44,6 @@
 
 content 색깔 fff (v)
 
-푸터
+ul에 클래스 wrap 플로트 해제 (v)
 
-ul에 클래스 wrap 플로트 해제
-
-icons float
-
-logo h1 제목
+logo h1태그로 변경(v)
