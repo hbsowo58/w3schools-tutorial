@@ -36,13 +36,13 @@
 
 4) 주소 adrress 태그 (v)
 
-5) footer에 로고 위치상 제일 먼저 와야 되니까 (pos:a) 배치
+5) footer에 로고 위치상 제일 먼저 와야 되니까 (pos:a) 배치 (마크업 순서가 뒤면 모를까 pos:a 필요성 못느낌)
 
-6) article width: 580px로 변경
+6) article width: 580px로 변경 (v)
 
 
 
-content 색깔 fff v
+content 색깔 fff (v)
 
 푸터
 
