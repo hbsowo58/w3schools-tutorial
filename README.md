@@ -23,7 +23,7 @@ JS 시작, 인트로덕션 추가 자바스크립트가 HTML에서 무슨역할�
 + 스크립트 태그는 헤더와 바디 사이에 존재할 수 있으며, 외부에 파일로 분류할 시 html 코드가 간단해지고 수정에 용이하며 여러 개로 나누고 빠르게 로딩 가능
 
 # 2019 04 18
-- html 폴더 table 추가 js 폴더 output 추가
+- html 폴더 table 추가 js폴더 output 추가
 
 + 캡션 caption 태그, 열확장 행확장 기능 존재 html의 핵심은 table와 div이라고 생각
 - output을 출력하는 다양한 방법 존재. 
@@ -56,4 +56,4 @@ JS 시작, 인트로덕션 추가 자바스크립트가 HTML에서 무슨역할�
 - html 폴더 Responsive Web Design css폴더 Backgrounds js폴더 Objects 추가
 # 2019 05 14
 - html 폴더 Computer Code Elements css폴더 Borders js폴더 Events 추가
-#
+
