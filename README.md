@@ -9,7 +9,6 @@ mark , ins , del , bdo, 태그를 배움
 
 mark: 형광펜 ins: 삽입됨 del:삭제됨 bdo: 텍스트 방향 지정
 
-
 # 2019 04 15
 주석 처리, color에 대한 다양한 방법 :rgba hsl, hsla 등
 
